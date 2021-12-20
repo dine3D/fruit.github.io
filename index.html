@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="bg">
+
+        </div>
+        <header>
+            <a href="#" class="logo">Fruit</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Acceuil</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="contenu">
+            <div class="texte-boite">
+                <h2>Consommer Frais</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis maxime explicabo? Obcaecati, porro! Perferendis aliquid unde iste modi eum ullam maiores placeat. Ipsum, soluta numquam vero, dicta eum at fuga ut voluptatem delectus quia quae harum quaerat quas totam!</p>
+                <a href="#" class="btn"><span></span> Savoir plus</a>
+            </div>
+            <div class="img-boite">
+                <img src="orbg.png" alt="" class="ImgFruit">
+            </div>
+        </div>
+        <ul class="tab">
+            <li data-text="1"><img src="orange1.png" alt="" onclick="ImageSlder('orbg.png'); CouleurF('')"></li>
+            <li  data-text="2"><img src="pomme1.png" alt="" onclick="ImageSlder('pomme1.png');  CouleurF('#c9275b')"></li>
+            <li  data-text="3"><img src="salade1.png" alt="" onclick="ImageSlder('saladebg.png');  CouleurF('#6c9330')"></li>
+            <li  data-text="4"><img src="tomate1.png" alt="" onclick="ImageSlder('tomate1.png');  CouleurF('#b20101')"></li>
+        </ul>
+        <div class="reseau">
+            <a href="#"><img src="facebook-square.svg" alt="" style="height: 20px;"></a>
+            <a href="#"><img src="twitter-square.svg" alt="" style="height: 20px;"></a>
+            <a href="#"><img src="instagram-square.svg" alt="" style="height: 20px;"></a>
+            <a href="#"><img src="linkedin.svg" alt="" style="height: 20px;"></a>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+
+        function ImageSlder(image) {
+            document.querySelector('.ImgFruit').src = image
+        }
+
+        function CouleurF(couleur) {
+             document.querySelector('.bg').style.background = couleur
+       }
+    </script>
+
+
+</body>
+</html>
